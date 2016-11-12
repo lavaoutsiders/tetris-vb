@@ -72,11 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="globalVariable.vb" />
+    <Compile Include="startChoice.Designer.vb">
+      <DependentUpon>startChoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="startChoice.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="tetris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tetris.Designer.vb">
+      <DependentUpon>tetris.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -94,6 +101,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="tetrisblock.vb" />
+    <Compile Include="tetrishelper.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -101,6 +110,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startChoice.resx">
+      <DependentUpon>startChoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tetris.resx">
+      <DependentUpon>tetris.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
